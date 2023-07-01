@@ -5,6 +5,9 @@
     --color-link: #434455;
     --color-white: #ffffff;
     --background-hero: #2e2f42;
+    --lightslate: #8e8f99;
+    --ocean: #404bbf;
+    --green-hover: #31d0aa;
 }
     
     body {
@@ -160,7 +163,16 @@
       padding-top: 188px;
       padding-bottom: 188px;
       background: var(--background-hero);
-    }
+      max-width: 1440px;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url(../images/bgimg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    
 
     .hero-title {
         text-align: center;
@@ -206,41 +218,55 @@
       padding: 120 0;
     }
 
-    .feature {
-    padding-top: 120px;
-    padding-bottom: 120px;
-
-    }
-    .feature-title {
-        color: var(--color-title);
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        margin-bottom: 8px;
-    }
-
     .feature-list {
       width: calc((100% - 72px) / 4);
     }
 
+    .feature-section {
+      padding: 120px 0;
+    }
+
+   .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 264px;
+      height: 112px;
+      border-radius: 4px;
+      background: #f4f4fd;
+      margin-bottom: 8px;
+    }
+
+    .feature-icon {
+
+    }
+
+    .feature-title {
+      color: var(--color-title);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+    }
+
     .feature-text {
-        color: var(--color-text);
-        font-size: 16px;
-        letter-spacing: 0.02em;
-        line-height: 1.5;
-        margin: 0;
+      color: var(--color-text);
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      line-height: 1.5;
+      margin: 0;
     }
 
     .text {
     line-height: 1.5;
     }
 
+    /* What are we doing */
+
     .section-pic {
       padding-bottom: 120px;
     }
-
-    /* What are we doing */
 
     .section-our-team {
       background-color:#f4f4fd;
@@ -434,3 +460,47 @@
         font-size: 16px;
         line-height: 1.5;
     }
+
+    /*Clients*/
+
+   .section-clients {
+      padding-top: 120px;
+    }
+
+    .clients-list {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding-bottom: 120px;
+    }
+
+    .client-item {
+  
+    }
+
+    .clients-link { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      width: 168px;
+      height: 88px;
+      
+      border: 1px solid var(--lightslate);
+      border-radius: 4px;
+    }
+
+    .clients-link:hover {
+      border-color: var(--ocean);
+    }
+
+    .clients-icon {
+      fill: var(--lightslate);
+    }
+
+    .clients-link:hover .clients-icon {
+      fill: var(--ocean);
+    }
+    
+  
+    
