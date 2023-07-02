@@ -572,6 +572,7 @@
     height: 100%;
 
     background-color: rgba(46, 47, 66, 0.40);
+    display: none;
   }
 
     .modal {
@@ -583,6 +584,7 @@
       height: 584px;
       background-color: #FCFCFC;
       border-radius: 4px;
+      display: none;
 
     }  
 
