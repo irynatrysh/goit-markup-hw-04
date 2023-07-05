@@ -138,7 +138,7 @@
     .header-link.active::after {
       content: '';
       position: absolute;
-      bottom: -2px;
+      bottom: -1px;
       left: 0;
 
       display: block;
@@ -152,6 +152,7 @@
     .header-link:hover,
     .header-link:focus {
       color: #404bbf;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .site-nav .link:active {
@@ -226,6 +227,7 @@
         cursor: pointer;
         border: none;
         border-radius: 4px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .hero-button:hover,
@@ -655,6 +657,8 @@
       
       border: 1px solid var(--lightslate);
       border-radius: 4px;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .clients-link:hover {
@@ -694,8 +698,9 @@
       left: 50%;
 
       transform: translateX(-50%) translateY(-50%) scale(1);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
       width: 408px;
-      height: 584px;
+      min-height: 584px;
       border-radius: 4px;
       
       background: var(--dairy-modal);
