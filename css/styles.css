@@ -78,6 +78,10 @@
     /* Header styles */
     .header {
       border-bottom: 1px solid #e7e9fc;
+      box-shadow:
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     }
     
     .header-container {
@@ -129,6 +133,7 @@
       line-height: 1.5;
       text-decoration: none;
       padding: 24px 0;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .active {
@@ -175,6 +180,7 @@
         font-size: 16px;
         line-height: 1.5;
         text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .contact-link:hover,
@@ -644,7 +650,7 @@
     }
 
     .client-item {
-  
+      
     }
 
     .clients-link { 
@@ -655,21 +661,25 @@
       width: 168px;
       height: 88px;
       
+      color: var(--lightslate);
       border: 1px solid var(--lightslate);
       border-radius: 4px;
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .clients-link:hover {
+    .clients-link:hover,
+    .clients-link:focus {
       border-color: var(--ocean);
+      color: var(--ocean);
     }
 
     .clients-icon {
-      fill: var(--lightslate);
+      fill: currentColor;
     }
 
-    .clients-link:hover .clients-icon {
+    .clients-link:hover .clients-icon,
+    .clients-link:focus {
       fill: var(--ocean);
     }
     
